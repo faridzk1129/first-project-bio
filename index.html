@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile web</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container-home" id="homeid">
+        <section class="left-home">
+            <div class="content-left-home">
+                <img src="./img/logo1.png" alt="logo" class="logo">
+                <h1>WELCOME TO <br> <span>MY WEBSITE</span></h1>
+                <p>In this website there are 3 sections,
+                    namely dashboards, biography, and contact.
+                    it's all about me, so let's explore
+                    this website</p>
+            </div>
+        </section>
+        <section class="right-home">
+            <div class="navigation">
+                <div class="explorer">
+                    <div class="navigation-atribut">
+                        <span class="explorer-atribut1"></span>
+                        <span class="explorer-atribut2"></span>
+                        <span class="explorer-atribut3">
+                            <img src="./img/v1.png" alt="" width="130px">
+                        </span>
+                    </div>
+                    <div class="navigation-text">
+                        <a href="#biography">
+                            <h2>Biography</h2>
+                            <p>Story About Me</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home">
+                    <div class="navigation-atribut">
+                        <span class="home-atribut1"></span>
+                        <span class="home-atribut2"></span>
+                        <span class="home-circle1"></span>
+                    </div>
+                    <div class="navigation-text">
+                        <a href="#homeid">
+                            <h2>Home</h2>
+                            <p>Back to home</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="navigation-atribut">
+                        <span class="contact-atribut1"></span>
+                        <span class="contact-atribut2"></span>
+                        <span class="contact-atribut3">
+                            <img src="./img/v1.png" alt="" width="130px">
+                        </span>
+                    </div>
+                    <div class="navigation-text">
+                        <a href="#form">
+                            <h2>Contact</h2>
+                            <p>Contact me for more</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="about">
+                    <div class="navigation-atribut">
+                        <span class="about-atribut1"></span>
+                        <span class="about-atribut2"></span>
+                        <span class="about-atribut3"></span>
+                    </div>
+                    <div class="navigation-text">
+                        <a href="#aboutMe">
+                            <h2>Dashboard</h2>
+                            <p>Short about website</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container-biography" id="biography">
+        <div class="biography">
+            <div class="navbio">
+                <a href="#biography">
+                    <h5>Biography</h5>
+                </a>
+            </div>
+            <div class="left-bio">
+                <p>Introduction</p>
+                <p>My name is Muhammad Miftah Farid</p>
+                <span class="linep"></span>
+                <p>You can call me farid, <br>
+                    I am a student from Makassar State University, computer engineering study program
+                </p>
+                <p>I like studying IT, especially front end, I also like UI UX design
+                </p>
+                <span class="linep"></span>
+                <p>Let's be my friend</p>
+            </div>
+            <div class="right-bio">
+                <h1>An <br>
+                    Introduction <br>
+                    of Human <br>
+                    Spesies
+                </h1>
+            </div>
+            <h1 class="right-top-bio">An <br>
+                Introduction <br>
+                of Human <br>
+                Spesies
+            </h1>
+            <img src="./img/biobg.jpg" alt="picture" class="far">
+        </div>
+    </div>
+
+    <div class="container-contactMe" id="contactMeid">
+        <div class="contactme">
+            <div class="form" id="form">
+                <form id="form">
+                    <div class="form-name">
+                        <h3>FULL NAME</h3>
+                        <input type="text" name="fullname" id="fullname" placeholder="Enter your name"
+                            autocomplete="off" required>
+                    </div>
+                    <div class="form-name email">
+                        <h3>EMAIL</h3>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address"
+                            autocomplete="off" required>
+                    </div>
+                    <div class="form-name message">
+                        <h3>MESSAGE</h3>
+                        <input type="textarea" id="message" placeholder="Send your message" autocomplete="off" required>
+                    </div>
+                    <button class="button-form">
+                        <h3>Send</h3>
+                        <button>
+                </form>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.0132202851664!2d119.64904441543457!3d-3.80722128966867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d944cde49c99bdf%3A0xaf2c78d3eee021dc!2sJl.%20Kijang%2C%20Macorawalie%2C%20Kec.%20Watang%20Sawitto%2C%20Kabupaten%20Pinrang%2C%20Sulawesi%20Selatan%2091212!5e0!3m2!1sid!2sid!4v1663597381416!5m2!1sid!2sid"
+                    width="100%" height="100%" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="wa">
+                <h1>Contact</h1>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("form").addEventListener('submit', function (e) {
+            e.preventDefault()
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Your message has been saved',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        })
+    </script>
+
+</body>
+
+</html>
